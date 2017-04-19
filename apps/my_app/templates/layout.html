@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Imperio Hair Salon</title>
+    {%load staticfiles%}
+    <link rel="stylesheet" type="text/css" href="{% static '/stylesheet.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Romanesco" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static '/bootstrap.min.css' %}"> -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar fixed-top navbar-light bg-faded">
+        <h1 class="name">Imperio Hair Salon</h1>
+    </nav>
+    <div class="navigation">
+    <ul>
+      <li class="underline"><a href="/">Welcome/Bienvenidos</a></li>
+      <li class="underline"><a href="/servicios">Servicios/Services</a></li>
+      <li class="underline"><a href="/contactenos">Contáctenos/Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="templates_block">
+    {%block content%}{%endblock content%}
+  </div>
+  <footer>
+    <p class="developer">Designed by: - Juan Martinez</p>
+  </footer>
+  </body>
+</div>
+</html>
